@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f9;
+                margin: 0;
+                padding: 20px;
+            }
+
+            form {
+                background: #ffffff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            form input[type="text"],
+            form input[type="email"],
+            form input[type="password"],
+            form input[type="date"],
+            form input[type="time"],
+            form input[type="number"],
+            form select {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            form input[type="checkbox"],
+            form input[type="radio"] {
+                margin-right: 5px;
+            }
+
+            form input[type="submit"],
+            form input[type="reset"] {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+
+            form input[type="submit"]:hover,
+            form input[type="reset"]:hover {
+                background-color: #0056b3;
+            }
+
+            form label {
+                display: block;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+            form br {
+                margin-bottom: 10px;
+            }
+        </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        Name: 
+        <input type="text" placeholder="NAAMEEE" maxlength="20" minlength="8">
+        <br>
+        Email:
+        <input type="email">
+        <br>
+        Password:
+        <input type="password" required>
+        <br>
+        Dob:
+        <input type="date">
+        <br>
+        Time:
+        <input type="time">
+        <br>
+        Phone num:
+        <input type="number">
+        <br>
+        
+        <br>
+        Hobby:
+        <input type="checkbox">dance
+        <input type="checkbox">sing
+        <input type="checkbox">suck
+        
+        <br>
+        
+        Gender:
+        <input type="radio" name="gender" checked>Male
+        <input type="radio" name="gender">Female
+        <br>
+        Address:
+        <select name="" id="">
+            <option value="">Kathmandu</option>
+            <option value="" selected>Lalitpur</option>
+            <option value="">Bhaktapur</option>
+        </select>
+
+        <input type="file" accept="Document/*">
+        <br>
+        <textarea name="" id="" rows="5" cols="30"></textarea>
+        <br>
+
+        <input type="submit">
+        <input type="reset">
+        <input type="submit" value="SRS">
+         
+    </form>
+</body>
+</html>
+
+
+
