@@ -1,0 +1,15 @@
+body{
+    background-color: bisque;
+    text-align: center;
+}
+p {
+    color: red;
+}
+
+h1 {
+    color: lime
+}
+
+a {
+    text-decoration: none;
+}
