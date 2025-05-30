@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flex Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: #f8f8f8;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: white;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header,
+    .nav,
+    .footer {
+      background-color: #e0e0e0;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .nav {
+      background-color: #dcdcdc;
+    }
+
+    .footer {
+      margin-top: 10px;
+      background-color: #dcdcdc;
+    }
+
+    .content-area {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    .sidebar {
+      padding: 150px 0;
+      text-align: center;
+      background-color: #e0e0e0;
+      flex: 1;
+    }
+
+    .main {
+      background-color: #d9d9d9;
+      padding: 150px;
+      text-align: center;
+      flex: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Header</div>
+    <div class="nav">Navigation Menu</div>
+
+    <div class="content-area">
+      <div class="sidebar">Content</div>
+      <div class="main">Main Content</div>
+      <div class="sidebar">Content</div>
+    </div>
+
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>
+      

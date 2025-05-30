@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/43b226b6d2.js" crossorigin="anonymous"></script>
+    <title>Login Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .login-container {
+            display: flex;
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .login-section {
+            flex: 1;
+            padding: 40px 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .info-section {
+            flex: 1;
+            background: linear-gradient(to right, #f74444, #ef5b67);
+            padding: 40px 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+        }
+
+        .login-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #e0e0e0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 23px;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 20px 0;
+            color: #999;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 14px;
+            background-color: #f8f8f8;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            border-color: #ff4757;
+            background-color: white;
+        }
+
+        .form-input::placeholder {
+            color: #999;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin: 15px 0 25px 0;
+        }
+
+        .forgot-password a {
+            color: #666;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .forgot-password a:hover {
+            color: #ff4757;
+        }
+        .login-btn-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-btn {
+            align-items: center;
+            width: 40%;
+            padding: 12px;
+            background: linear-gradient(to right, #ff5757, #ff4757);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .info-section {
+            text-align: center;
+        }
+        .info-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .info-description {
+            font-size: 14px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .login-container {
+                flex-direction: column;
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+            }
+            
+            .login-section,
+            .info-section {
+                padding: 30px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-section">
+            <h2 class="login-title">Login</h2>
+            
+            <div class="social-login">
+                <i class="fa-brands fa-facebook social-btn"></i>
+                <i class="fa-brands fa-twitter social-btn"></i>
+            </div>
+            
+            <div class="divider">or use your account</div>
+            
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder="Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" class="form-input" placeholder="Password" required>
+                </div>
+                
+                <div class="forgot-password">
+                    <a href="#">Forgot your password?</a>
+                </div>
+                
+                <div class="login-btn-div">
+                    <button type="submit" class="login-btn">LOG IN</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="info-section">
+            <h3 class="info-title">HTML CSS Login Form</h3>
+            <p class="info-description">
+                This login form is created using pure HTML and CSS for special design, 
+                a responsive UI form.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
