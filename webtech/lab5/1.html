@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.collegenp.com%2Fuploads%2F2025%2F02%2Fnepal-college-of-information-technology-ncit-building.jpg&f=1&nofb=1&ipt=29341cb29df53fc3ddaa48384347cbc78bc94a2295e6a05dca93532ac8988844);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+        .login {
+            background-color: rgba(0, 255, 68, 0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 30%;
+            width: 40%;
+        }
+
+        .admission {
+            background-color: rgba(15, 243, 255, 0.7);
+            padding: 20px; 
+            box-sizing: border-box;        
+        }
+        .part {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 40px 10px 0;
+            align-items: center;
+            gap: 10px;
+        }
+        .textarea {
+            display: flex;
+            gap: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="login">
+            <h1>login</h1>
+            <div>
+                Username:
+                <input type="text" name="" id="" placeholder="SRS">
+            </div>
+            <br>
+            <div>
+                Password:
+                <input type="password" name="" id="" placeholder="eg: 12332982">
+            </div>
+            <br>
+            <a href="">Forgot Password?</a>
+        </div>
+        <div class="admission">
+            <form action="">
+            <h1>Admission form</h1>
+            <div class="part">
+                First Name:
+                <input type="text" value="Simanta">
+            </div>
+            <div class="part">
+                Last Name:
+                <input type="text" value="Kasaju">
+            </div>
+            <div class="part">
+                Email:
+                <input type="email">
+            </div>
+            <div class="part">
+                Password: 
+                <input type="password" placeholder="Eg: 12345678">
+            </div>
+            <div class="part">
+                 DOB:
+                <input type="date" name="" id="">
+            </div>
+            <div class="part">
+                 Contact No.
+                <input type="number" name="" id="" placeholder="Eg: 977-0123456789">
+            </div>
+            <div class="part">
+                State:
+                <input type="text" disabled>
+            </div>
+            <div class="part">
+                State:
+                <input type="text" disabled>
+            </div>
+            <div class="part">
+                Gender
+                <div>
+                    <input type="radio" name="" id="" name="gender">Male
+                    <input type="radio" name="" id="" name="gender">Female
+                    <input type="radio" name="" id="" name="gender">Others
+                </div>
+            </div>
+            <div class="part">
+                Faculty
+                <div>
+                    <input type="radio" name="" id="" name="faculty">BCA
+                    <input type="radio" name="" id="" name="faculty">BBS
+                    <input type="radio" name="" id="" name="faculty">+2
+                </div>
+            </div>
+            <div class="part">
+                Hobbies
+                <div>
+                    <input type="radio" name="" id="" name="hobby">Music
+                    <input type="radio" name="" id="" name="hobby">Travel
+                    <input type="radio" name="" id="" name="hobby">Reading books
+                </div>
+            </div>
+            <div class="part">
+                Nationality
+                <select name="" id="">
+                <option value="">Nepal</option>
+                </select>
+            </div>
+            <div class="textarea">
+                Message
+                <textarea name="" id="" rows="5" cols="40"></textarea>
+            </div>
+            <div class="part">
+                Terms & condition
+                <div>
+                    <input type="radio" name="" id="" name="agree">I agree
+                    <input type="radio" name="" id="" name="agree">I disagree
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="button" value="SignUp">
+                <input type="reset" value="Clear">
+            </div>
+            
+        </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            background: #f5e6e6;
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 5px;
+            width: 100%;
+        }
+
+        .form-label {
+            min-width: 120px;
+            font-size: 14px;
+            color: #333;
+            flex-shrink: 0;
+        }
+
+        .form-input {
+            flex: 1;
+            padding: 6px 8px;
+            border: 1px solid #999;
+            font-size: 14px;
+            background-color: white;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #666;
+        }
+
+        .name-inputs {
+            display: flex;
+            gap: 5px;
+        }
+
+        .name-inputs input {
+            flex: 1;
+            padding: 6px 8px;
+            border: 1px solid #999;
+            font-size: 14px;
+            background-color: white;
+            width: 80%;
+        }
+
+        .date-inputs {
+            display: flex;
+            gap: 5px;
+            flex: 1;
+            align-items: center;
+        }
+
+        .date-inputs select {
+            padding: 6px 8px;
+            border: 1px solid #999;
+            font-size: 14px;
+            background-color: white;
+        }
+
+        .date-format {
+            color: black;   
+            font-style: italic;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .phone-inputs {
+            display: flex;
+            gap: 5px;
+            flex: 1;
+        }
+
+        .phone-inputs input:first-child {
+            width: 60px;
+            flex: none;
+        }
+
+        .phone-inputs input:last-child {
+            flex: 1;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            flex: 1;
+        }
+
+        .radio-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            gap: 15px;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .form-select {
+            flex: 1;
+            padding: 6px 8px;
+            border: 1px solid #999;
+            font-size: 14px;
+            background-color: white;
+        }
+
+        .form-textarea {
+            flex: 1;
+            padding: 6px 8px;
+            border: 1px solid #999;
+            font-size: 14px;
+            background-color: white;
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        .file-input {
+            flex: 1;
+        }
+
+        .submit-container {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .submit-btn {
+            padding: 8px 25px;
+            background-color: #f0f0f0;
+            border: 1px solid;
+            border: 1px solid grey;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #e8e8e8;
+        }
+
+        .submit-btn:active {
+            border-color: #666 #ccc #ccc #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-title">Student Registration Form</h1>
+        
+        <form>
+            <div class="form-group">
+                <label class="form-label">Roll no. :</label>
+                <input type="text" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Student name :</label>
+                <div class="name-inputs">
+                    <input type="text" placeholder="First Name">-
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Father's name :</label>
+                <input type="text" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Date of birth :</label>
+                <div class="date-inputs">
+                    <select>
+                        <option>Day</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    -
+                    <select>
+                        <option>Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                    </select>
+                    -
+                    <select>
+                        <option>Year</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                    </select>
+                    <span class="date-format">(DD-MM-YYYY)</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Mobile no. :</label>
+                <div class="phone-inputs">
+                    <input type="text" value="+91" readonly>-
+                    <input type="tel" class="form-input">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Email id :</label>
+                <input type="email" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Password :</label>
+                <input type="password" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Gender :</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Department :</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="cse">
+                        <label for="cse">CSE</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="it">
+                        <label for="it">IT</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="ece">
+                        <label for="ece">ECE</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="civil">
+                        <label for="civil">Civil</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="mech">
+                        <label for="mech">Mech</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Course :</label>
+                <select class="form-select">
+                    <option>------------------- Select Current Course's --------------------</option>
+                    <option>B.Tech</option>
+                    <option>M.Tech</option>
+                    <option>MBA</option>
+                    <option>MCA</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Student photo :</label>
+                <input type="file" class="file-input" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">City :</label>
+                <input type="text" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Address :</label>
+                <textarea class="form-textarea"></textarea>
+            </div>
+
+            <div class="submit-container">
+                <button type="submit" class="submit-btn">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

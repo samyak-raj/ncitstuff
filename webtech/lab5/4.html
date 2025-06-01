@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: cyan;
+        }
+        h1 {
+            text-decoration: underline;
+        }
+        p {
+            color: blue;
+        }
+        .form-container {
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.ctvAtUGqzP0Od0mLW8ub0gHaEo%26pid%3DApi&f=1&ipt=441a6dcd9aab93cd0c1a77354057d4b6eb689c2dd1706ed0da900430bf85b86b&ipo=images);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+
+        .form-label {
+            min-width: 120px;
+            font-size: 14px;
+            color: #333;
+            text-align: left;
+        }
+
+        .form-input {
+            padding: 6px 8px;
+            background-color: #ffffff;
+            border: 1px solid;
+            border-color: #999 #ddd #ddd #999;
+            font-size: 14px;
+            color: #333;
+            width: 30%;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 15px 0;
+        }
+
+        .login-button {
+            padding: 6px 20px;
+            border: 1px solid;
+            font-size: 12px;
+            color: #666;
+            cursor: pointer;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .forgot-password {
+            text-align: center;
+        }
+
+        .forgot-password a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .forgot-password a:hover {
+            color: #0052a3;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <form action="">
+    <h1>User login.....</h1>
+     <div class="form-container">
+        <div class="form-group">
+            <label class="form-label">Enter Name :</label>
+            <input type="text" class="form-input">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Enter Password :</label>
+            <input type="password" class="form-input">
+        </div>
+
+        <div class="button-container">
+            <button type="submit" class="login-button">Login</button>
+        </div>
+
+        <div class="forgot-password">
+            <a href="#">Forget password</a>
+        </div>
+    </div>
+    </form>
+   </div> 
+</body>
+</html>
