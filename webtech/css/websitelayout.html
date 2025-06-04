@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/43b226b6d2.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .body {
+            display: flex;
+            margin: 0;
+        }
+        .left, .right {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            width: 25%;
+            border: 1px solid black;
+        }
+        .middle {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            width: 50%;
+            border: 1px solid black;
+        }
+        .head {
+            background-image:linear-gradient(navy, black, crimson);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .footer {
+            background-image: linear-gradient(navy, black, crimson);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        img {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            left: 7%;
+            top: 6%;
+        }
+        nav{
+            background-color: black;
+            padding:10px 10px 10px 0px;
+            position: sticky;
+            top:0;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 10px 13px 10px;
+        }
+        a:hover{
+            background-color: red;
+        }
+        button{
+            background-color:red;
+            border-radius: 10px;
+            color:white;
+        }
+        input{
+            float: right;
+        }
+        #search{
+            position: absolute;
+            right: 20px;
+            top:15px;
+        }
+    </style>
+</head>
+<body>
+   <div class="head">
+    <h1>Header</h1>
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpu.edu.np%2Fwp-content%2Fuploads%2F2019%2F02%2Flogo_pu.png&f=1&nofb=1&ipt=1b0fcd0ff3f44ffb8566323956a7c30bc23f35592b03fe5021e5dd766422da92" alt="">
+</div> 
+   <nav>
+        <a href="">Home</a>
+        <a href="">Gallery</a>
+        <a href="">News</a>
+        <a href="">Contact</a>
+        <button>Submit</button>  
+
+        <i class="fa-brands fa-facebook fa-bounce" style="color: #005eff;"></i>
+         <i class="fa-brands fa-youtube fa-bounce" style="color:red;"></i>
+         <i class="fa-brands fa-square-instagram fa-bounce" style="color: #af2cc9;"></i>
+        <input type="search" name="" id="">
+       <i class="fa-solid fa-magnifying-glass fa-bounce" id="search" style="color: #81e605;" ></i>
+    </nav>
+   <div class="body">
+    <div class="left">Left</div>
+    <div class="middle">Middle</div>
+    <div class="right">Right</div>
+   </div>
+   <div class="footer">&copy Pokhara University</div>
+</body>
+</html>
