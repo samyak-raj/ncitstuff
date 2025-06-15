@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements Example</title>
+    <style>
+        h1::before {
+            content: "Welcome: ";
+            color: red;
+            font-weight: bold;
+        }
+
+        h1::after {
+            content: " - Have a great day!";
+            color: blue;
+            font-style: italic;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: green;
+            font-weight: bold;
+        }
+
+        p::first-line {
+            color: purple;
+            font-style: italic;
+        }
+
+        ::selection {
+            background-color: yellow;
+            color: black;
+        }
+
+        li::marker {
+            color: orange;
+            font-size: 1.5em;
+        }
+
+        input::placeholder {
+            color: gray;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elements Example</h1>
+    <p>This is a paragraph demonstrating the use of pseudo-elements.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <input type="text" placeholder="Enter your name">
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background and Border Properties</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            color: white;
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.-2Wu7IUVPkOde9Oph4HiiAHaD4%26r%3D0%26pid%3DApi&f=1&ipt=f6987e2afe8883d2356fe8f81b43029cbe5402fb867a713daceb7f993565a022&ipo=images );
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .border-example {
+            border: 5px solid #e5ff00;
+            border-radius: 15px;
+            border-width: 5px;
+            border-style: dashed;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .advanced {
+            background: linear-gradient(to right, #fc7250, #feac6e, #ffd0ac);
+            border: 10px double #2ecc71;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background and Border Properties</h1>
+    <div class="border-example">
+        <p>This div demonstrates various border properties.</p>
+    </div>
+    <div class="advanced">
+        <p>This div demonstrates advanced background and border properties.</p>
+    </div>
+</body>
+</html>

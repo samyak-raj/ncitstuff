@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            margin: 20px;
+            border: 5px solid #333;
+            padding: 20px;
+        }
+
+        .no-padding {
+            padding: 0;
+        }
+
+        .no-margin {
+            margin: 0;
+        }
+
+        .no-border {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Box Model Examples</h1>
+    <div class="box">Box with Margin, Border, and Padding</div>
+    <div class="box no-padding">Box with No Padding</div>
+    <div class="box no-margin">Box with No Margin</div>
+    <div class="box no-border">Box with No Border</div>
+</body>
+</html>

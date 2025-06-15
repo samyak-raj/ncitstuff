@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.college-info {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.college-info p {
+    font-size: 16px;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+.college-info .highlight {
+    color: #e74c3c;
+    font-weight: bold;
+}

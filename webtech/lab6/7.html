@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: square;
+            list-style-position: inside;
+            color: #4CAF50;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        ul.custom-image {
+            list-style: none; 
+        }
+
+        .custom-image li {
+            background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.2UCWJ0XX2hs8syc1d7K_eQHaHa%26pid%3DApi&f=1&ipt=02d7373f39381e8d0824f41178a21142853118b00b762ca1f59991c6d6fe8b48&ipo=images);
+            background-size: 15px 15px; 
+            background-repeat: no-repeat;
+            padding-left: 25px; 
+        }
+
+        ol {
+            list-style-type: upper-roman;
+            list-style-position: outside;
+            color: #FF5722;
+            margin: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS List Properties</h1>
+
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h2>Unordered List with Custom Image</h2>
+    <ul class="custom-image">
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+
+</body>
+</html>

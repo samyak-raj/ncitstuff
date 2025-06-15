@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font and Style Demonstration</title>
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Type Selector */
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: darkblue;
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Georgia', serif;
+            font-size: 16px;
+            color: darkgreen;
+            line-height: 1.5;
+        }
+
+        /* Class Selector */
+        .highlight {
+            font-weight: bold;
+            color: orange;
+            text-decoration: underline;
+        }
+
+        /* ID Selector */
+        #special {
+            font-style: italic;
+            font-size: 18px;
+            color: purple;
+        }
+
+        /* Group Selector */
+        h2, h3 {
+            font-family: 'Verdana', sans-serif;
+            color: teal;
+        }
+
+        /* Descendant Selector */
+        div p {
+            font-size: 14px;
+            color: gray;
+        }
+
+        /* Child Selector */
+        div > p {
+            font-size: 14px;
+            color: brown;
+        }
+
+        /* Adjacent Sibling Selector */
+        h1 + p {
+            color: red;
+        }
+
+        /* General Sibling Selector */
+        h1 ~ p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Font and Style Demonstration</h1>
+    <p>This is a paragraph styled using a type selector.</p>
+    <p class="highlight">This paragraph is styled using a class selector.</p>
+    <p id="special">This paragraph is styled using an ID selector.</p>
+    <h2>Group Selector Example</h2>
+    <h3>Another Group Selector Example</h3>
+    <div>
+        <p>This paragraph is styled using a descendant selector.</p>
+        <p>This paragraph is styled using a child selector.</p>
+    </div>
+    <p>This paragraph is styled using a general sibling selector.</p>
+</body>
+</html>
