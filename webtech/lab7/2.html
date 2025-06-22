@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      background-color: skyblue;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    fieldset {
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid gray;
+    }
+
+
+    label {
+      display: inline-block;
+      width: 100px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+      width: 180px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      height: 60px;
+    }
+
+    .checkbox-group {
+      margin-top: 10px;
+    }
+
+    .checkbox-group label {
+      font-weight: normal;
+      font-size: 12px;
+      margin-right: 15px;
+    }
+
+    .buttons {
+      margin-top: 15px;
+    }
+
+    .buttons input {
+      padding: 5px 10px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <fieldset>
+    <legend>Registration Form</legend>
+    
+    <form>
+      <label>First Name :</label>
+      <input type="text"><br>
+
+      <label>Last Name :</label>
+      <input type="text"><br>
+
+      <label>Age :</label>
+      <input type="number"><br>
+
+      <label>Email Id :</label>
+      <input type="email"><br>
+
+      <label>Description:</label>
+      <textarea></textarea><br>
+
+      <label>Phone :</label>
+      <input type="text"><br>
+
+      <label>Occupation :</label>
+      <input type="text"><br>
+
+      <div class="checkbox-group">
+        <input type="radio" name="terms"> <label>I Agree Terms & conditions</label>
+        <input type="radio" name="terms"> <label>I DisAgree</label>
+      </div>
+
+      <div class="buttons">
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+      </div>
+    </form>
+  </fieldset>
+
+</body>
+</html>

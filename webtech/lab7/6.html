@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #00ffff, #00e6e6);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .payment-container {
+            background: #ffd700;
+            border-radius: 15px;
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .payment-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #666;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            background: white;
+            color: #333;
+            outline: none;
+        }
+
+        .form-input::placeholder {
+            color: #999;
+        }
+
+        .expiry-input {
+            position: relative;
+        }
+
+        .expiry-input::after {
+            content: "📅";
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        .accepted-cards {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .accepted-label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .card-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 25px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .mastercard {
+            background: linear-gradient(45deg, #eb001b, #f79e1b);
+        }
+
+        .visa {
+            background: #1a1f71;
+        }
+
+        .pay-button {
+            width: 100%;
+            padding: 15px;
+            background: #32cd32;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .pay-button:hover {
+            background: #228b22;
+        }
+
+        .pay-button:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1 class="payment-title">Payment details</h1>
+        
+        <form>
+            <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-input" placeholder="Simanta kasaju">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-input" placeholder="sim@example.com">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Card Number</label>
+                <input type="text" class="form-input" placeholder="1122334455" maxlength="16">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Expiry date</label>
+                <input type="date" class="form-input expiry-input" value="mm/dd/yyyy">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">CVV</label>
+                <input type="text" class="form-input" placeholder="12345" maxlength="4">
+            </div>
+
+            <div class="accepted-cards">
+                <div class="accepted-label">Accepted</div>
+                <div class="card-icons">
+                    <div class="card-icon mastercard">MC</div>
+                    <div class="card-icon visa">VISA</div>
+                </div>
+            </div>
+
+            <button type="submit" class="pay-button">pay</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>

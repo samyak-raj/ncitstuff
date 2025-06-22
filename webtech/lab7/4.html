@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-container {
+      margin: 30px auto;
+      padding: 30px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .login-container img {
+      width: 220px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 20p
+    }
+
+    .login-container label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+    }
+
+    .login-container input[type="submit"],
+    .login-container input[type="button"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .login-btn {
+      background-color: #009e60;
+      margin-bottom: 10px;
+    }
+
+    .cancel-btn {
+      background-color: #f44336;
+    }
+
+    .remember {
+      text-align: left;
+      margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .remember input {
+      margin-right: 5px;
+    }
+
+    .forgot {
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    .forgot a {
+      text-decoration: none;
+      color: black;
+    }
+    span {
+        color: blue;
+        text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-Image.png" alt="Avatar">
+    
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter Username">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password">
+
+      <input type="submit" value="Login" class="login-btn">
+
+      <div class="remember">
+        <input type="checkbox" id="remember" checked> <label for="remember">Remember me</label>
+      </div>
+
+      <input type="button" value="Cancel" class="cancel-btn">
+
+      <div class="forgot">
+        <a href="#">Forgot <span>password?</span></a>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
