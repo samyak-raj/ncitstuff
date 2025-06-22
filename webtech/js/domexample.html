@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Number 1:
+   <input type="number" name="" id="num1">
+   <br>
+   Number 2:
+   <input type="number" name="" id="num2">
+    <br>
+    <input type="number" name="" id="result" placeholder="Total">
+    <button onclick="calc()">Calculate</button>
+   <script>
+        function calc(){
+            num1 = Number(document.getElementById("num1").value)
+            num2 = Number(document.getElementById("num2").value)
+            total = (num1 + num2)
+            result = document.getElementById("result")
+            result.value= total
+        }
+   </script> 
+</body>
+</html>

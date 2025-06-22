@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .head {
+            text-align: center;
+        }
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        input[type="number"] {
+            width: 80%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="number"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        #result {
+            background-color: #e9ecef;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+   <h1 class="head">SRS cafe</h1> 
+   <table>
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>Cappacuino</td>
+            <td>1200</td>
+            <td>
+                <input type="number" name="" id="C">
+            </td>
+        </tr>
+        <tr>
+            <td>Espresso</td>
+            <td>1000</td>
+            <td>
+                <input type="number" name="" id="E">
+            </td>
+        </tr>
+        <tr>
+            <td>Masala Chai</td>
+            <td>2000</td>
+            <td>
+                <input type="number" name="" id="M">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="number" name="" id="result" placeholder="Total">
+            </td>
+        </tr>
+    </table>
+    <script>
+        function calc() {
+            c = Number(document.getElementById("C")?.value || 0);
+            e = Number(document.getElementById("E").value || 0);
+            m = Number(document.getElementById("M").value || 0);
+
+            total = (c * 1200) + (e * 1000) + (m * 2000);
+            document.getElementById("result").value = total; 
+        }
+        setInterval(calc);
+   </script>
+</body>
+</html>
