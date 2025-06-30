@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: red;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    onclick
+    oncontextmenu
+    onmouseover
+    onmouseup
+    onmousedown
+    onmouseenter
+    onmouseleave
+    etc
+    -->
+   <div onmouse="ab()" id="a"></div> 
+   <script>
+        function ab()
+        {
+            document.getElementById("a").style.backgroundColor = "green"
+        }
+   </script>
+</body>
+</html>

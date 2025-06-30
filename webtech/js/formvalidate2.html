@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="welcome.html" onsubmit="return valid()">
+    Name:
+    <br>
+    <input type="text" name="" id="Name" onkeyup="valid()">
+    <p id="Nameerr"></p>
+    Email:
+    <input type="text" name="" id="Email" onkeyup="valid()">
+    <p id="Emailerr"></p>
+    <input type="submit" value="submit">
+   </form> 
+   <script>
+        function valid()
+        {
+            name = document.getElementById("Name").value;
+            nameerr = document.getElementById("Nameerr");
+            email= document.getElementById("Email").value;
+            emailerr = document.getElementById("Emailerr");
+            flag1 = 0;
+            flag2 = 0;
+            if (name === '' || name === null) {
+                nameerr.innerHTML = "name cannot be empty"
+                flag1 = 0
+            } else if (name.length < 9) {
+                nameerr.innerHTML = "Name is too short"
+                flag1 = 0
+            } else {
+                nameerr.innerHTML = "✅" 
+                flag1 = 1
+            }
+
+            if (email === '' || email === null) {
+                emailerr.innerHTML = "email cannot be empty"
+                flag2 = 0
+            } else if (email.search(/^[a-z]{3}\.[0-9]{5}\@gmail.com$/i) < 0) {
+                emailerr.innerHTML = "email is too short"
+                flag2 = 0
+            } else {
+                emailerr.innerHTML = "✅" 
+                flag2 = 1
+            }
+        
+            if(flag1 && flag2 ){
+                return true;
+            } else {
+                return false
+            }
+        }
+
+
+   </script>
+</body>
+</html>

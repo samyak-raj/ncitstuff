@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        #d {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+        }
+        #l {
+            background-color: whitesmoke;
+            color: black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="d" onclick="dark()">Dark</button>
+    <button id="l" onclick="light()">Light</button>
+    <h1 id="h">introductions to JS</h1>
+    <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quasi maxime voluptates sapiente architecto ipsa natus sunt facilis quos necessitatibus fugit ab suscipit veritatis, commodi debitis accusantium quia. Blanditiis, ad?
+    Asperiores, fugiat! Accusamus a odit laborum optio voluptates veniam sequi ullam, quaerat quae? Reiciendis aut similique dolorum et harum dolore reprehenderit ducimus qui in iusto? Cum cumque est assumenda magni.
+    Est illo laborum, laboriosam voluptatibus deleniti quos reprehenderit iste dolore voluptas, doloremque at commodi! Qui deserunt laudantium sunt iusto dolores dignissimos harum soluta officia, beatae doloremque labore! Recusandae, illo hic!
+    Sunt itaque debitis recusandae alias amet inventore architecto consequuntur neque perferendis aliquam nisi dolorem necessitatibus laboriosam ipsum eum, velit sapiente nam optio corporis. Magnam, nostrum. Dolorum recusandae nemo quaerat iure?</p>
+    <script>
+        function dark(){
+            document.body.style.backgroundColor = "black"
+            document.getElementById("h").style.color = "white"
+            document.getElementById("p").style.color = "white"
+            document.getElementById("d").style.cssText= "background-color: black; color: white;"
+        }
+        function light(){
+            document.body.style.backgroundColor = "whitesmoke"
+            document.getElementById("h").style.color = "black"
+            document.getElementById("p").style.color = "black"
+            document.getElementById("l").style.cssText= "background-color: whitesmoke; color: black;"
+        }
+    </script>
+</body>
+</html>

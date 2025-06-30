@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="welcome.html" onsubmit="return valid()">
+        Password:
+        <br>
+        <input type="password" name="" id="pass">
+        <br>
+        Confirm Password:
+        <br>
+        <input type="password" name="" id="cpass">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        function valid() {
+            p = document.getElementById("pass").value;
+            cp = document.getElementById("cpass").value;
+            pattern = /^S[0-9]{4}[a-z]{4}$/i;
+            if (p === "" || p === null){
+                alert("Please enter a password")
+                return false
+            } else if (p.length <= 8) {
+                alert("Password length is not matching")
+                return false;
+            } else if (p.search(pattern) < 0) {
+                alert("Password pattern is not match")
+                return false;
+            } else if (cp === '' || cp === null) {
+                alert("Please enter confirm password")
+                return false;
+            } else if (p != cp) {
+                alert("password and confirm password doesnt match")
+                return false;
+            } else {
+                return true
+            } 
+        }
+    </script>
+</body>
+</html>
