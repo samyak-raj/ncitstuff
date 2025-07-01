@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light">
+  <header>
+    <nav>
+      <div class="container">
+        <ul class="navbar">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+          <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+          <li><a href="resume.html" class="active"><i class="fas fa-file-alt"></i> Resume</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <button class="theme-toggle">🌓</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="resume">
+      <div class="container">
+        <h2><i class="fas fa-file-alt"></i> My Resume</h2>
+        <a href="#" class="btn" onclick="alert('Resume download feature coming soon!')">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+        
+        <div class="resume-sections">
+          <div class="resume-section">
+            <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Company</th>
+                  <th>Duration</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Frontend Developer</td>
+                  <td>Freelance</td>
+                  <td>2024-Present</td>
+                  <td>Building responsive websites and web applications</td>
+                </tr>
+                <tr>
+                  <td>Web Design Intern</td>
+                  <td>Tech Startup</td>
+                  <td>2023-2024</td>
+                  <td>Assisted in UI/UX design and frontend development</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="resume-section">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Degree</th>
+                  <th>Institution</th>
+                  <th>Year</th>
+                  <th>GPA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bachelor's in Software Engineering</td>
+                  <td>NCIT</td>
+                  <td>2024-2028</td>
+                  <td>----------</td>
+                </tr>
+                <tr>
+                  <td>Web Development Certification</td>
+                  <td>Online Platform</td>
+                  <td>2023</td>
+                  <td>Completed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Samyak Raj Shakya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="theme.js"></script>
+</body>
+</html>
