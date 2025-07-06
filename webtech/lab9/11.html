@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function generateTable() {
+        let tableHTML = "<table border='1'><tr><th>Number</th><th>Square</th><th>Cube</th></tr>";
+
+        for (let i = 0; i <= 10; i++) {
+            const square = i * i;
+            const cube = i * i * i;
+            tableHTML += `<tr><td>${i}</td><td>${square}</td><td>${cube}</td></tr>`;
+        }
+
+        tableHTML += "</table>";
+        return tableHTML;
+    }
+
+    document.body.innerHTML = generateTable();
+   </script> 
+</body>
+</html>

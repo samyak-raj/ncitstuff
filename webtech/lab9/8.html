@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+    <script>
+        const num1 = parseFloat(prompt("Enter the first number:"));
+        const num2 = parseFloat(prompt("Enter the second number:"));
+
+        const confirmAction = confirm("Do you want to perform arithmetic operations?");
+        if (confirmAction) {
+            const sum = num1 + num2;
+            const difference = num1 - num2;
+            const multiplication = num1 * num2;
+            const division = num1 / num2;
+
+            alert(
+                `Results:\n` +
+                `Sum: ${sum}\n` +
+                `Difference: ${difference}\n` +
+                `Multiplication: ${multiplication}\n` +
+                `Division: ${division}`
+            );
+        } else {
+            alert("Operation canceled by the user.");
+        }
+    </script>
+</body>
+</html>

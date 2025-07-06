@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation Solver</title>
+</head>
+<body>
+    <script>
+        // Prompt the user for coefficients a, b, and c
+        const a = parseFloat(prompt("Enter the coefficient 'a' (non-zero):"));
+        const b = parseFloat(prompt("Enter the coefficient 'b':"));
+        const c = parseFloat(prompt("Enter the coefficient 'c':"));
+
+        // Check if 'a' is zero (not a quadratic equation)
+        if (a === 0) {
+            alert("Coefficient 'a' cannot be zero. This is not a quadratic equation.");
+        } else {
+            // Calculate the discriminant
+            const discriminant = b * b - 4 * a * c;
+
+            if (discriminant > 0) {
+                // Two real and distinct roots
+                const root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+                const root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+                alert(`The equation has two real and distinct roots:\nRoot 1: ${root1}\nRoot 2: ${root2}`);
+            } else if (discriminant === 0) {
+                // One real and repeated root
+                const root = -b / (2 * a);
+                alert(`The equation has one real and repeated root:\nRoot: ${root}`);
+            } else {
+                // No real roots
+                alert("The equation has no real roots.");
+            }
+        }
+    </script>
+</body>
+</html>

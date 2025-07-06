@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Hide Paragraph</title>
+</head>
+<body>
+    <button id="toggleParagraph">Show/Hide Paragraph</button>
+    <button id="showDate">Show Current Date</button>
+    <p id="paragraph" style="display: none;">This is a sample paragraph that can be toggled.</p>
+    <div id="date"></div>
+
+    <script>
+        const toggleButton = document.getElementById("toggleParagraph");
+        const showDateButton = document.getElementById("showDate");
+        const paragraph = document.getElementById("paragraph");
+        const dateDiv = document.getElementById("date");
+
+        toggleButton.addEventListener("click", () => {
+            if (paragraph.style.display === "none") {
+                paragraph.style.display = "block";
+            } else {
+                paragraph.style.display = "none";
+            }
+        });
+
+        showDateButton.addEventListener("click", () => {
+            const currentDate = new Date();
+            dateDiv.textContent = `Current Date: ${currentDate.toLocaleString()}`;
+        });
+    </script>
+</body>
+</html>

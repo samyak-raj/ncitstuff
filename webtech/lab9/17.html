@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Today's Date</title>
+    <style>
+        #dateBox {
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            border: 2px solid black;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="dateBox">Today's Date</div>
+    <script>
+        const currentDate = new Date().toLocaleDateString();
+        document.getElementById("dateBox").textContent = `Date: ${currentDate}`;
+    </script>
+</body>
+</html>

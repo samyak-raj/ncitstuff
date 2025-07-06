@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <script>
+        const number = parseInt(prompt("Enter a number to generate its multiplication table:"));
+        let tableHTML = `<h2>Multiplication Table for ${number}</h2>`;
+        tableHTML += "<table border='1'><tr><th>Multiplier</th><th>Result</th></tr>";
+        for (let i = 1; i <= 10; i++) {
+            tableHTML += `<tr><td>${number} x ${i}</td><td>${number * i}</td></tr>`;
+        }
+        tableHTML += "</table>";
+        document.body.innerHTML = tableHTML;
+    </script>
+</body>
+</html>

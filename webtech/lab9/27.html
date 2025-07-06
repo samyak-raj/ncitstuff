@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Family Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div id="tableContainer"></div>
+    <button onclick="changeTableColor()">Change Table Background Color</button>
+
+    <script>
+        // Family data
+        const familyData = [
+            { id: 1, name: "John", gender: "Male", salary: "$5000" },
+            { id: 2, name: "Jane", gender: "Female", salary: "$6000" },
+            { id: 3, name: "Mike", gender: "Male", salary: "$4500" },
+            { id: 4, name: "Emily", gender: "Female", salary: "$7000" }
+        ];
+
+        // Create the table dynamically
+        function createTable() {
+            const tableContainer = document.getElementById("tableContainer");
+            const table = document.createElement("table");
+            table.id = "familyTable";
+
+            // Create header row
+            const headerRow = document.createElement("tr");
+            ["Id", "Name", "Gender", "Salary"].forEach(header => {
+                const th = document.createElement("th");
+                th.textContent = header;
+                headerRow.appendChild(th);
+            });
+            table.appendChild(headerRow);
+
+            // Create data rows
+            familyData.forEach(member => {
+                const row = document.createElement("tr");
+                Object.values(member).forEach(value => {
+                    const td = document.createElement("td");
+                    td.textContent = value;
+                    row.appendChild(td);
+                });
+                table.appendChild(row);
+            });
+
+            // Append the table to the container
+            tableContainer.appendChild(table);
+        }
+
+        // Change table background color
+        let colorIndex = 0;
+        function changeTableColor() {
+            const table = document.getElementById("familyTable");
+            switch (colorIndex) {
+                case 0:
+                    table.style.backgroundColor = "lightblue";
+                    break;
+                case 1:
+                    table.style.backgroundColor = "lightgreen";
+                    break;
+                case 2:
+                    table.style.backgroundColor = "lightyellow";
+                    break;
+                default:
+                    table.style.backgroundColor = "white";
+                    colorIndex = -1; // Reset to default
+            }
+            colorIndex++;
+        }
+
+        // Create the table on page load
+        createTable();
+    </script>
+</body>
+</html>
