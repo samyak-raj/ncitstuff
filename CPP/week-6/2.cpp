@@ -21,7 +21,7 @@ class Height {
             inches += h.inches;
             if (inches > 12) {
                 feet += inches / 12;
-                inches += inches % 12;
+                inches = inches % 12;
             }
         }
 };

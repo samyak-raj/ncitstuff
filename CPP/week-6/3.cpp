@@ -25,7 +25,7 @@ Time operator +(Time &a, Time &b) {
     temp.hr = totalMin / 60;
     temp.min = totalMin % 60;
     return temp;
-};
+}
 
 int main() {
     Time T1(2, 50), T2(3, 40), T3;
