@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Events Example</title>
+  <style>
+    div {
+        padding: 20px;
+        border: 1px solid black;
+        width: 200px;
+        margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mouse Events Example</h1>
+
+  <button id="clickButton">Click</button>
+  <button id="contextMenuButton">Right Click</button>
+  <div id="mouseOverDiv">Mouse Over</div>
+  <div id="mouseUpDiv">Mouse Up</div>
+  <div id="mouseDownDiv">Mouse Down</div>
+  <div id="mouseEnterDiv">Mouse Enter</div>
+  <div id="mouseLeaveDiv">Mouse Leave</div>
+
+  <script>
+    // Click Event
+    document.getElementById('clickButton').onclick = () => {
+      alert('Click event triggered!');
+    };
+
+    // Context Menu (Right Click) Event
+    document.getElementById('contextMenuButton').oncontextmenu = (event) => {
+      alert('Right Click event triggered!');
+    };
+
+    // Mouse Over Event
+    document.getElementById('mouseOverDiv').onmouseover = () => {
+      alert('Mouse Over event triggered!');
+    };
+
+    // Mouse Up Event
+    document.getElementById('mouseUpDiv').onmouseup = () => {
+      alert('Mouse Up event triggered!');
+    };
+
+    // Mouse Down Event
+    document.getElementById('mouseDownDiv').onmousedown = () => {
+      alert('Mouse Down event triggered!');
+    };
+
+    // Mouse Enter Event
+    document.getElementById('mouseEnterDiv').onmouseenter = () => {
+      alert('Mouse Enter event triggered!');
+    };
+
+    // Mouse Leave Event
+    document.getElementById('mouseLeaveDiv').onmouseleave = () => {
+      alert('Mouse Leave event triggered!');
+    };
+  </script>
+</body>
+</html>

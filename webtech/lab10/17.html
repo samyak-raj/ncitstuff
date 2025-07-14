@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window Event Example</title>
+</head>
+<body>
+  <button id="openWindow">Open Window</button>
+  <button id="closeWindow">Close Window</button>
+
+  <script>
+    let newWindow;
+
+    document.getElementById('openWindow').addEventListener('click', () => {
+      newWindow = window.open('https://www.google.com', '_blank', 'width=600,height=400');
+    });
+
+    document.getElementById('closeWindow').addEventListener('click', () => {
+      if (newWindow) {
+        newWindow.close();
+      } else {  
+        alert('No window to close!');
+      }
+    });
+  </script>
+</body>
+</html>

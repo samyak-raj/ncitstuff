@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard Events Example</title>
+</head>
+<body>
+    <h1>Keyboard Events Example</h1>
+    <input type="text" id="keyboardInput" placeholder="Type something">
+    
+    <script>
+      const input = document.getElementById('keyboardInput');
+
+      input.onkeydown = (event) => {
+        document.body.style.backgroundColor = 'lightblue';
+      };
+  
+      input.onkeypress = (event) => {
+        document.body.style.backgroundColor = 'lightgreen';
+      };
+  
+      input.onkeyup = (event) => {
+        document.body.style.backgroundColor = 'lightcoral';
+      };
+//onkeydown:
+// Logs the key as soon as it is pressed down.
+// Example: Pressing "A" logs Key Down: a.
+
+// onkeypress:
+// Logs the key while it is held down (deprecated behavior).
+// Example: Holding "A" logs Key Press: a.
+
+// onkeyup:
+// Logs the key after it is released.
+// Example: Releasing "A" logs Key Up: a.
+  </script>
+</body>
+</html>

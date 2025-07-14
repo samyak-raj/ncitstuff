@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Methods and Properties</title>
+</head>
+<body>
+  <div id="parent">
+    <p id="child1">Child 1</p>
+    <p id="child2">Child 2</p>
+  </div>
+
+  <script>
+    const parent = document.getElementById('parent');
+
+    // appendChild()
+    const newChild = document.createElement('p');
+    newChild.textContent = 'Appended Child';
+    parent.appendChild(newChild);
+
+    // prepend()
+    const prependedChild = document.createElement('p');
+    prependedChild.textContent = 'Prepended Child';
+    parent.prepend(prependedChild);
+
+    // insertBefore()
+    const anotherChild = document.createElement('p');
+    anotherChild.textContent = 'Inserted Before Child 2';
+    const child2 = document.getElementById('child2');
+    parent.insertBefore(anotherChild, child2);
+
+    // replaceChild()
+    const replacementChild = document.createElement('p');
+    replacementChild.textContent = 'Replacement Child';
+    parent.replaceChild(replacementChild, child2);
+
+    // removeChild()
+    const child1 = document.getElementById('child1');
+    parent.removeChild(child1);
+
+    // hasChildNodes()
+    console.log('Has child nodes:', parent.hasChildNodes());
+
+    // childNodes
+    console.log('Child nodes:', parent.childNodes);
+
+    // children
+    console.log('Children:', parent.children);
+
+    // firstChild
+    console.log('First child:', parent.firstChild);
+
+    // lastChild
+    console.log('Last child:', parent.lastChild);
+
+    // firstElementChild
+    console.log('First element child:', parent.firstElementChild);
+
+    // lastElementChild
+    console.log('Last element child:', parent.lastElementChild);
+  </script>
+</body>
+</html>

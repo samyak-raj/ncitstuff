@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regex Pattern Matching</title>
+</head>
+<body>
+  <h1>Regex Pattern Matching</h1>
+  <form id="regexForm">
+    <label for="inputString">Enter a string:</label>
+    <input type="text" id="inputString" name="inputString" required>
+    <button type="button" id="checkButton">Check Patterns</button>
+  </form>
+  <h2>Results:</h2>
+  <ul id="results"></ul>
+
+  <script>
+    document.getElementById('checkButton').addEventListener('click', () => {
+      const inputString = document.getElementById('inputString').value;
+      const patterns = [
+        /^[A-Za-z]+$/, // Only alphabets
+        /^[0-9]+$/, // Only digits
+        /^[A-Za-z0-9]+$/, // Alphanumeric
+        /^\d{4}$/, // Exactly 4 digits
+        /^[A-Z]/, // Starts with an uppercase letter
+        /[aeiou]/i, // Contains a vowel
+        /\s/, // Contains whitespace
+        /hello/, // Contains the word "hello"
+        /\d/, // Contains a digit
+        /[^A-Za-z0-9]/ // Contains a special character
+      ];
+
+      const resultsList = document.getElementById('results');
+      resultsList.innerHTML = '';
+
+      patterns.forEach((pattern, index) => {
+        const result = pattern.test(inputString);
+        const listItem = document.createElement('li');
+        listItem.textContent = `Pattern ${index + 1} (${pattern}): ${result ? 'Matched' : 'Not Matched'}`;
+        resultsList.appendChild(listItem);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Attribute Methods</title>
+</head>
+<body>
+  <h1 id="exampleElement" data-custom="customValue">Hello, DOM!</h1>
+  <button id="getAttributeButton">Get Attribute</button>
+  <button id="setAttributeButton">Set Attribute</button>
+  <button id="hasAttributeButton">Has Attribute</button>
+  <button id="removeAttributeButton">Remove Attribute</button>
+
+  <script>
+    const element = document.getElementById('exampleElement');
+
+    document.getElementById('getAttributeButton').onclick = () => {
+      const value = element.getAttribute('data-custom');
+      alert(`getAttribute: ${value}`);
+    };
+
+    document.getElementById('setAttributeButton').onclick = () => {
+      element.setAttribute('data-custom', 'newValue');
+      alert('setAttribute: Attribute updated to "newValue"');
+    };
+
+    document.getElementById('hasAttributeButton').onclick = () => {
+      const hasAttr = element.hasAttribute('data-custom');
+      alert(`hasAttribute: ${hasAttr}`);
+    };
+
+    document.getElementById('removeAttributeButton').onclick = () => {
+      element.removeAttribute('data-custom');
+      alert('removeAttribute: Attribute removed');
+    };
+  </script>
+</body>
+</html>

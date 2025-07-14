@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Image Visibility</title>
+</head>
+<body>
+  <h1>Image Visibility Toggle</h1>
+  <button id="toggleButton">Hide Image</button>
+  <br><br>
+  <img id="image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.MJlomMFm_utsSWY8pryOfwHaEK%3Fpid%3DApi&f=1&ipt=c97ac490525ba0b5ae1a93a40e165952f74362a99b3da7719ab2f75cb3ae9979&ipo=images" alt="Sample Image">
+
+  <script>
+    const toggleButton = document.getElementById('toggleButton');
+    const image = document.getElementById('image');
+
+    toggleButton.addEventListener('click', () => {
+      if (image.style.display === 'none') {
+        image.style.display = 'block';
+        toggleButton.textContent = 'Hide Image';
+      } else {
+        image.style.display = 'none';
+        toggleButton.textContent = 'Show Image';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Increment Sum</title>
+</head>
+<body>
+  <button id="sumButton">Sum</button>
+  <p id="result">0</p>
+
+  <script>
+    let sum = 0;
+
+    const button = document.getElementById('sumButton');
+    const result = document.getElementById('result');
+
+    button.addEventListener('click', () => {
+      sum += 10; 
+      result.textContent = sum; 
+    });
+  </script>
+</body>
+</html>

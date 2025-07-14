@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gender Selection</title>
+</head>
+<body>
+  <form>
+    <input type="radio" name="gender" id="male" value="Male" onclick="showMessage(value)"> Male<br>
+    <input type="radio" name="gender" id="female" value="Female" onclick="showMessage(value)"> Female<br>
+    <input type="radio" name="gender" id="other" value="Other" onclick="showMessage(value)"> Other
+  </form>
+
+  <script>
+    function showMessage(value) {
+      alert("you are " + value); 
+    }
+  </script>
+</body>
+</html>

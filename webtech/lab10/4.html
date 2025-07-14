@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM 0 vs DOM 2</title>
+</head>
+<body>
+  <button id="dom0Button">DOM 0 Event</button>
+  <button id="dom2Button">DOM 2 Event</button>
+
+  <script>
+    // DOM Level 0 Example
+    const dom0Button = document.getElementById('dom0Button');
+    dom0Button.onclick = function() {
+      alert('DOM Level 0: Event triggered!');
+    };
+
+    // DOM Level 2 Example
+    const dom2Button = document.getElementById('dom2Button');
+    dom2Button.addEventListener('click', function() {
+      alert('DOM Level 2: Event triggered!');
+    });
+  </script>
+</body>
+</html>

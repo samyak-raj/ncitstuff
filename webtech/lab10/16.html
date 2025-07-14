@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse String</title>
+</head>
+<body>
+  <script>
+    const userInput = prompt("Enter a string to reverse:");
+    if (userInput) {
+      const reversedString = userInput.split('').reverse().join('');
+      alert(`Reversed String: ${reversedString}`);
+    } else {
+      alert("No string provided.");
+    }
+  </script>
+</body>
+</html>

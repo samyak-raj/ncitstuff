@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day of the Week</title>
+</head>
+<body>
+  <script>
+    const dayNumber = parseInt(prompt("Enter a number (1-7) for the day of the week:"));
+
+    let dayName;
+
+    switch (dayNumber) {
+      case 1:
+        dayName = "Sunday";
+        break;
+      case 2:
+        dayName = "Monday";
+        break;
+      case 3:
+        dayName = "Tuesday";
+        break;
+      case 4:
+        dayName = "Wednesday";
+        break;
+      case 5:
+        dayName = "Thursday";
+        break;
+      case 6:
+        dayName = "Friday";
+        break;
+      case 7:
+        dayName = "Saturday";
+        break;
+      default:
+        dayName = "Invalid input! Please enter a number between 1 and 7.";
+    }
+
+    document.write(`Day: ${dayName}`);
+  </script>
+</body>
+</html>

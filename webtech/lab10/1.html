@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Id"></div>
+    <div name="Name"></div>
+    <div class="Class"></div>
+    <p></p>
+    <script>
+      const Id = document.getElementById('Id');
+      Id.textContent = "Id"; 
+      
+      const Name = document.getElementsByName("Name");
+      Name[0].textContent = "Name";
+
+        const Class = document.querySelector('.Class');
+        Class.textContent = "CLass";
+        
+        const tagName = document.getElementsByTagName('p');
+        tagName[0].textContent = "tag"
+
+    </script> 
+</body>
+</html>
