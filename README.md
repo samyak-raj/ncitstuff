@@ -3,3 +3,5 @@
 ## 1. C programming
 ## 2. C++
 ## 3. HTML, CSS, JS
+## Java
+## DSA
