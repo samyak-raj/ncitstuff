@@ -1,2 +1,4 @@
 **/output/
 .hintrc
+**/.idea/
+**/out/
