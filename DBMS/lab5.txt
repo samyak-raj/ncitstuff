@@ -1,0 +1,101 @@
+CREATE TABLE employee 
+(
+    eid INT PRIMARY KEY,
+    ename VARCHAR(20),
+    job VARCHAR(20),
+    did INT,
+    salary FLOAT
+)
+
+
+INSERT INTO employee VALUES
+(1, "arjun", "AP", 1, 10000.00),
+(2, "rabi", "JP", 2, 12000.00),
+(3, "rohan", "AP", 2, 15000.00),
+(4, "krishna", "AP", 1, 20000.00)
+
+CREATE TABLE department 
+(
+    did INT PRIMARY KEY,
+    dname VARCHAR(20),
+    location VARCHAR(20)
+)
+
+INSERT INTO department VALUES
+(1, "accounting", "kathmandu"),
+(2, "sales", "patan"),
+(3, "research", "banepa"),
+(4, "operations", "bhaktapur")
+
+LAB EXERCIESE:
+1.
+SELECT ename, salary FROM employee
+WHERE salary > (SELECT MIN(salary) FROM employee)
+AND job LIKE 'P%'
+
+2.
+SELECT * FROM employee 
+WHERE job = ( SELECT job FROM employee where ename='ram')
+
+3.
+SELECT * FROM employee
+WHERE salary < (SELECT MAX(salary) FROM employee WHERE did = 1)
+
+4.
+SELECT * FROM employee
+INNER JOIN department
+ON employee.did = department.did
+
+SELECT * FROM employee
+LEFT JOIN department
+ON employee.did = department.did
+
+SELECT * FROM employee
+RIGHT JOIN department
+ON employee.did = department.did
+
+SELECT * FROM employee
+FULL OUTER JOIN department
+ON employee.did = department.did
+
+----------------------------------------------------------------
+
+1.
+SELECT customer.name, item.name FROM customer
+INNER JOIN order_info
+ON customer.cid = order_info.cid
+INNER JOIN item
+ON order_info.iid = item.iid
+
+2.
+SELECT qty, amount FROM order_info
+INNER JOIN item 
+ON order_info.iid = item.iid
+WHERE name = 'apple'
+
+3.
+SELECT SUM(amount) FROM order_info
+INNER JOIN customer 
+ON order_info.cid = customer.cid
+WHERE name = 'Ram'
+
+4.
+SELECT customer.name, item.name, address, up FROM customer
+INNER JOIN order_info
+ON customer.cid = order_info.cid
+INNER JOIN item
+ON order_info.iid = item.iid
+WHERE address='ktm' OR salary > 15000
+
+5.
+SELECT name FROM customer
+WHERE cid IN (SELECT cid FROM order_info GROUP BY cid HAVING sum(amount) > 500)
+
+
+
+
+
+
+
+
+

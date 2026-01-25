@@ -1,0 +1,54 @@
+1. 
+CREATE TABLE employee
+(
+    eid INT PRIMARY KEY,
+    name VARCHAR(20),
+    address VARCHAR(20),
+    job VARCHAR(20),
+    salary INT
+)
+
+2.
+INSERT INTO employee VALUES(101, "Ram", "Kathmandu", "Programmer", 50000)
+
+3.
+INSERT INTO employee VALUES
+(102, "Sam", "Patan", "CEO", 67000),
+(103, "Hari", "Imadole", "QA", 35000)
+
+4.
+INSERT INTO employee(eid, address, salary) VALUES(105, "Banepa", 35000)
+
+5. 
+UPDATE employee SET salary=25000 WHERE job="programmer"
+
+6.
+UPDATE employee SET name="Krishna", address="Pharping" WHERE eid=101
+
+7.
+SELECT * FROM employee
+
+8.
+SELECT name, job FROM employee
+
+9. 
+SELECT * FROM employee WHERE job="analyst"
+
+10.
+SELECT DISTINCT job FROM employee
+
+11. 
+SELECT name, job FROM employee WHERE salary>=20000
+
+12.
+DELETE FROM employee WHERE job="designer"
+
+13.
+DELETE FROM employee WHERE job="programmer" AND salary<15000
+
+14.
+UPDATE employee SET job=NULL WHERE eid=101
+
+15.
+TRUNCATE employee
+

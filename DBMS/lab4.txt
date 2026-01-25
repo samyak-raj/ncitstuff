@@ -1,0 +1,19 @@
+1.
+CREATE TABLE employee 
+(
+eid INT PRIMARY KEY,
+name VARCHAR(20),
+country VARCHAR(20),
+city VARCHAR(20),
+job VARCHAR(20),
+salary INT
+)
+
+2.
+INSERT INTO employee VALUES
+(1, "sam", "nepal", "ktm", "engineer", 100000),
+(2, "ram", "japan", "tokyo", "analyst", 20000),
+(3, "sita", "india", "delhi", "seo", 670000),
+(4, "hari", "china", "beijing", "project manager", 30000),
+(5, "gita", "usa", "ohio", "developer", 80000),
+(6, "anurodh", "australia", "sydney", "devops", 700000)

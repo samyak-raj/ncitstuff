@@ -1,0 +1,105 @@
+1.
+CREATE TABLE employee
+(
+    eid INT,
+    name VARCHAR(20),
+    country VARCHAR(20),
+    city VARCHAR(20),
+    job VARCHAR(20),
+    salary INT
+)
+
+2. 
+INSERT INTO employee VALUES 
+(1, "Sam", "nepal", "ktm", "programmer", 67000), 
+(2, "Ram", "india", "delhi", "manager", 10000), 
+(3, "Sita", "England", "london", "programmer", 24000), 
+(4, "Hari", "germany", "Berlin", "ceo", 38000), 
+(5, "Gita", "japan", "tokyo", "programmer", 47000);
+
+3. 
+select * from employee
+
+4.
+SELECT name, job FROM employee 
+
+5.
+SELECT * FROM employee WHERE country="germany" AND salary>20000 
+
+6.
+SELECT name, country, job, salary FROM employee WHERE job IN ("programmer", "manager")
+
+7.
+SELECT * FROM employee WHERE country="germany" AND city IN ("munich", "berlin")
+
+8.
+SELECT * FROM employee ORDER BY eid DESC
+
+9.
+SELECT * FROM employee WHERE name LIKE "j%"
+
+10.
+SELECT * FROM employee WHERE name LIKE "%y"
+
+11.
+SELECT * FROM employee WHERE country LIKE "%e%"
+
+12.
+SELECT * FROM employee WHERE country NOT LIKE '%land%'
+
+13.
+SELECT * FROM employee WHERE city LIKE '_erlin'
+
+14.
+SELECT * FROM employee WHERE city LIKE 'l_n_on'
+
+15.
+SELECT * FROM employee WHERE city LIKE 'b%' 
+OR city LIKE 'm%'
+OR city LIKE 'd%'
+
+16.
+SELECT * FROM employee WHERE city LIKE 'a%' 
+OR city LIKE 'b%'
+OR city LIKE 'c%'
+
+17.
+SELECT * FROM employee WHERE city NOT LIKE 'b%' 
+AND city NOT LIKE 'm%'
+AND city NOT LIKE 'd%'
+
+18.
+SELECT * FROM employee WHERE city IN ('delhi', 'manchester')
+
+19.
+SELECT * FROM employee WHERE salary BETWEEN 20000 AND 35000
+
+20.
+SELECT * FROM employee WHERE salary BETWEEN 10000 AND 40000 AND eid NOT IN (1, 2, 3)
+
+21.
+SELECT * FROM employee WHERE city LIKE '[b-m]%'
+
+22.
+SELECT * FROM employee WHERE city LIKE '[^b-m]%'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
