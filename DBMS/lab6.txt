@@ -1,0 +1,46 @@
+1. 
+CREATE VIEW q1 AS 
+SELECT * FROM employee
+WHERE job = 'AP';
+
+2.
+CREATE VIEW q2 AS
+SELECT ename ,salary, dname FROM employee
+INNER JOIN department
+ON employee.did = department.did
+WHERE salary > 10000;
+
+3.
+CREATE VIEW q3 AS
+SELECT name, age, date, amount FROM customer
+INNER JOIN order
+ON customer.cid = order.cid;
+
+4.
+ALTER VIEW q3 AS 
+SELECT name, age, date, amount, address, salary FROM customer
+INNER JOIN `lab6`.`order`
+ON customer.cid = `lab6`.`order`.cid;
+
+5.
+ALTER VIEW q3 AS 
+SELECT name, age, date, amount, address, salary FROM customer
+INNER JOIN `lab6`.`order`
+ON customer.cid = `lab6`.`order`.cid
+WHERE salary > 5000;
+
+6.
+DROP view q3;
+
+
+
+
+
+
+
+
+
+
+
+
+
