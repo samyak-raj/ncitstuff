@@ -36,27 +36,27 @@ public class NumberPrinter {
     }
 }
 
-    class Printer extends Thread {
-        NumberPrinter obj;
-        boolean isOddThread;
-        Printer(NumberPrinter obj, boolean isOddThread) {
-            this.obj = obj;
-            this.isOddThread = isOddThread;
-        }
+class Printer extends Thread {
+    NumberPrinter obj;
+    boolean isOddThread;
+    Printer(NumberPrinter obj, boolean isOddThread) {
+        this.obj = obj;
+        this.isOddThread = isOddThread;
+    }
 
-        public void run() {
-            if(isOddThread) {
-                obj.printOdd();
-            } else {
-                obj.printEven();
-            }
-        }
-        public static void main(String[] args) {
-            NumberPrinter np = new NumberPrinter();
-            Printer p1 = new Printer(np, true);
-            Printer p2 = new Printer(np, false);
-            p1.start();
-            p2.start();
+    public void run() {
+        if(isOddThread) {
+            obj.printOdd();
+        } else {
+            obj.printEven();
         }
     }
+    public static void main(String[] args) {
+        NumberPrinter np = new NumberPrinter();
+        Printer p1 = new Printer(np, true);
+        Printer p2 = new Printer(np, false);
+        p1.start();
+        p2.start();
+    }
+}
 
