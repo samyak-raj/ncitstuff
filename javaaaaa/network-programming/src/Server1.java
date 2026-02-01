@@ -29,9 +29,6 @@ public class Server1 {
         for (int i = word.length() - 1; i>=0; i--) {
             rev += word.charAt(i);
         }
-        if(rev.equalsIgnoreCase(word)) {
-            return true;
-        }
-        return false;
+        return rev.equalsIgnoreCase(word);
     }
 }
