@@ -11,6 +11,6 @@ public class Square extends HttpServlet {
         res.setContentType("text/html");
         int num = Integer.parseInt(req.getParameter("num"));
         int sq = num * num;
-        out.print("<h3>The square of " + num + " is " + sq + "<h3>");
+        out.print("<h3>The square of " + num + " is " + sq + "</h3>");
     }
 }
