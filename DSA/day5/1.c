@@ -19,6 +19,10 @@ void insert(int value) {
 }
 
 void delete() {
+    if (first ==NULL) {
+        printf("linked list is empty");
+        return;
+    }
     temp = first;
     first = first->next;
     printf("Deleted node: %d", temp->data);
