@@ -6,15 +6,16 @@ struct Node {
     struct Node* left;
     struct Node* right;
 };
+typedef struct Node* NodePtr;
 
-struct Node* createNode(int value) {
-    struct Node* newnode = (struct Node*) malloc(sizeof(struct Node));
+NodePtr createNode(int value) {
+    NodePtr newnode = (NodePtr) malloc(sizeof(struct Node));
     newnode->data = value;
     newnode->left = newnode->right = NULL;
     return newnode;
 }
 
-struct Node* insert(struct Node* root, int value) {
+NodePtr insert(NodePtr root, int value) {
     if(root == NULL) {
         return createNode(value);
     }
@@ -26,7 +27,7 @@ struct Node* insert(struct Node* root, int value) {
     return root;
 }
 
-void inorder(struct Node* root) {
+void inorder(NodePtr root) {
     if (root != NULL) {
         inorder(root->left);
         printf("%d", root->data);
@@ -34,7 +35,7 @@ void inorder(struct Node* root) {
     }
 }
 
-void preorder(struct Node* root) {
+void preorder(NodePtr root) {
     if (root != NULL) {
         printf("%d", root->data);
         preorder(root->left);
@@ -42,7 +43,7 @@ void preorder(struct Node* root) {
     }
 }
 
-void postorder(struct Node* root) {
+void postorder(NodePtr root) {
     if (root != NULL) {
         postorder(root->left);
         postorder(root->right);
@@ -51,7 +52,7 @@ void postorder(struct Node* root) {
 }
 
 int main() {
-    struct Node* root = NULL;
+    NodePtr root = NULL;
     int choice, value;
     while(1) {
         printf("\nBST\n");
