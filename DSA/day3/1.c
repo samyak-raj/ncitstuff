@@ -1,6 +1,6 @@
 //infix to postfix
 #include <stdio.h>
-
+#include <ctype.h>
 char stack[20];
 int tos = -1;
 
