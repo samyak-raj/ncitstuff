@@ -1,0 +1,74 @@
+>> syms x
+>> diff(x)
+ 
+ans =
+ 
+1
+ 
+>> diff(x.^3-3*x)
+ 
+ans =
+ 
+3*x^2 - 3
+ 
+>> diff(sin(x))
+ 
+ans =
+ 
+cos(x)
+ 
+>> diff(cos(x))
+ 
+ans =
+ 
+-sin(x)
+ 
+>> diff(tan(x))
+ 
+ans =
+ 
+tan(x)^2 + 1
+ 
+>> diff(x.^x)
+ 
+ans =
+ 
+x*x^(x - 1) + x^x*log(x)
+ 
+>> int(x)
+ 
+ans =
+ 
+x^2/2
+ 
+>> int(sin(x))
+ 
+ans =
+ 
+-cos(x)
+ 
+>> int(x, 1, 2)
+ 
+ans =
+ 
+3/2
+ 
+>> int(exp(2*x))
+ 
+ans =
+ 
+exp(2*x)/2
+ 
+>> pi
+
+ans =
+
+    3.1416
+
+>> int(sin(x), 0, pi)
+ 
+ans =
+ 
+2
+ 
+>> 
