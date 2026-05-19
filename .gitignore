@@ -2,3 +2,5 @@
 .hintrc
 **/.idea/
 **/out/
+CGM/
+**/CGM/**

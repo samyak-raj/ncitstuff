@@ -21,7 +21,7 @@ public class BankAccount {
 }
 
 class Test1 {
-    public static void main(String[] args) throws InsufficientFundException{
+    public static void main(String[] args) {
         try {
             BankAccount b = new BankAccount(10000);
             b.withdraw(30000);

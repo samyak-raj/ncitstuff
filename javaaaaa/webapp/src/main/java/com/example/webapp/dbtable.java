@@ -11,7 +11,7 @@ public class dbtable extends HttpServlet {
         res.setContentType("text/html");
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/lab6", "root", "rootpass");
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/lab6", "root", "ronotpass");
             Statement s = cn.createStatement();
             ResultSet rs = s.executeQuery("Select * from department");
             out.print("<table>");

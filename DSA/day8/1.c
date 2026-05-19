@@ -2,14 +2,14 @@
 int i, j;
 void insertionSort(int a[], int n){
     int k;
-    for(i = 0; i < n; i++) {
+    for(i = 1; i < n; i++) {
         k = a[i];
         j = i-1;
         while(j >=0 && a[j] > k) {
             a[j+1] = a[j];
             j--;
         }
-        a[j+1] = k;
+        a[j+1] = k  ;
     }
 }
 
