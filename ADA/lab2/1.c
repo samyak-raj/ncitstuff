@@ -46,10 +46,10 @@ int main() {
     for (int i = 0; i < 1000; i++) {
         arr[i] = rand() % 1000;
     }
-    for (int i = 0; i < 1000; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+    // for (int i = 0; i < 1000; i++) {
+    //     printf("%d ", arr[i]);
+    // }
+    // printf("\n");
     struct Pair mm = getMinMax(arr, 0, 999);
     printf("Minimum: %d\n", mm.min);
     printf("Maximum: %d\n", mm.max);
