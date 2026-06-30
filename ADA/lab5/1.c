@@ -1,3 +1,4 @@
+//job sequencing with deadlinse (greedy approach)
 #include <stdio.h>
 #include <stdlib.h>
 
