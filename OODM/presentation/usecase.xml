@@ -1,0 +1,155 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Hotel Management Use Case">
+    <mxGraphModel dx="1800" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- System Boundary -->
+        <mxCell id="system" value="Hotel Management System"
+          style="rounded=0;whiteSpace=wrap;html=1;"
+          vertex="1" parent="1">
+          <mxGeometry x="220" y="20" width="900" height="760" as="geometry"/>
+        </mxCell>
+
+        <!-- Guest Actor -->
+        <mxCell id="guestActor" value="Guest"
+          style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;"
+          vertex="1" parent="1">
+          <mxGeometry x="60" y="280" width="40" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Staff Actor -->
+        <mxCell id="staffActor" value="Hotel Staff"
+          style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;"
+          vertex="1" parent="1">
+          <mxGeometry x="1170" y="280" width="40" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Use Cases -->
+
+        <mxCell id="uc1" value="Register"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="40" y="40" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc2" value="Update Profile"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="40" y="110" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc3" value="Search Available Rooms"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="40" y="180" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc4" value="Make Reservation"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="300" y="80" width="170" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc5" value="Modify Reservation"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="300" y="160" width="170" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc6" value="Cancel Reservation"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="300" y="240" width="170" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc7" value="View Reservation"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="300" y="320" width="170" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc8" value="Check Room Availability"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="610" y="50" width="220" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc9" value="Calculate Total"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="610" y="130" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc10" value="Confirm Reservation"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="610" y="210" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc11" value="Assign Room"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="610" y="290" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc12" value="Use Hotel Services"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="300" y="420" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc13" value="Record Service Usage"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="610" y="400" width="210" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc14" value="Calculate Service Charge"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="610" y="480" width="220" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc15" value="Make Payment"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="300" y="540" width="170" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc16" value="Generate Receipt"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="610" y="560" width="190" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc17" value="Process Refund"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="610" y="640" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc18" value="Manage Room Types"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="840" y="100" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc19" value="Manage Services"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="840" y="200" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc20" value="Update Room Status"
+          style="ellipse;whiteSpace=wrap;html=1;"
+          vertex="1" parent="system">
+          <mxGeometry x="840" y="300" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

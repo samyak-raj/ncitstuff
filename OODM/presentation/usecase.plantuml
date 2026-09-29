@@ -1,0 +1,84 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor Guest
+actor "Hotel Staff" as Staff
+
+rectangle "Hotel Management System" {
+
+    usecase "Register" as UC1
+    usecase "Update Profile" as UC2
+    usecase "Search Available\nRooms" as UC3
+
+    usecase "Make Reservation" as UC4
+    usecase "Modify Reservation" as UC5
+    usecase "Cancel Reservation" as UC6
+    usecase "View Reservation" as UC7
+
+    usecase "Check Room\nAvailability" as UC8
+    usecase "Calculate Total" as UC9
+    usecase "Confirm Reservation" as UC10
+    usecase "Assign Room" as UC11
+
+    usecase "Use Hotel Services" as UC12
+    usecase "Record Service Usage" as UC13
+    usecase "Calculate Service\nCharge" as UC14
+
+    usecase "Make Payment" as UC15
+    usecase "Generate Receipt" as UC16
+    usecase "Process Refund" as UC17
+
+    usecase "Manage Room Types" as UC18
+    usecase "Manage Services" as UC19
+    usecase "Update Room Status" as UC20
+}
+
+'=========================
+' Guest Associations
+'=========================
+
+Guest --> UC1
+Guest --> UC2
+Guest --> UC3
+Guest --> UC4
+Guest --> UC5
+Guest --> UC6
+Guest --> UC7
+Guest --> UC12
+Guest --> UC15
+
+'=========================
+' Staff Associations
+'=========================
+
+Staff --> UC10
+Staff --> UC11
+Staff --> UC13
+Staff --> UC17
+Staff --> UC18
+Staff --> UC19
+Staff --> UC20
+Staff --> UC5
+Staff --> UC6
+
+'=========================
+' Include Relationships
+'=========================
+
+UC4 .> UC8  : <<include>>
+UC4 .> UC9  : <<include>>
+UC4 .> UC10 : <<include>>
+
+UC12 .> UC13 : <<include>>
+UC13 .> UC14 : <<include>>
+
+UC15 .> UC16 : <<include>>
+
+'=========================
+' Extend Relationships
+'=========================
+
+UC17 .> UC6 : <<extend>>
+
+@enduml
